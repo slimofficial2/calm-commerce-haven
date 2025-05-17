@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ShopCategories from "@/components/ShopCategories";
 import CategoryPage from "@/pages/CategoryPage";
+import ProductPage from "@/pages/ProductPage";
 
 const queryClient = new QueryClient();
 
@@ -30,7 +31,7 @@ const App = () => (
               <Route path="/cart" element={<GenericPlaceholderPage title="Shopping Cart" />} />
               <Route path="/wishlist" element={<GenericPlaceholderPage title="Your Wishlist" />} />
               <Route path="/account" element={<GenericPlaceholderPage title="Your Account" />} />
-              <Route path="/product/:id" element={<GenericPlaceholderPage title="Product Details" />} />
+              <Route path="/product/:id" element={<ProductPage />} />
               <Route path="/contact" element={<GenericPlaceholderPage title="Contact Us" />} />
               <Route path="/faq" element={<GenericPlaceholderPage title="FAQ" />} />
               <Route path="/shipping" element={<GenericPlaceholderPage title="Shipping & Returns" />} />
